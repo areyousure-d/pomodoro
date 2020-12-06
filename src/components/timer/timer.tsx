@@ -7,8 +7,8 @@ import styles from "./timer.module.css";
 
 const Timer: FC = () => {
   const [title, setTitle] = useState("start pomodoro");
-  const [workTime, setWorkTime] = useState(10);
-  const [restTime, setRestTime] = useState(5);
+  const [workTime, setWorkTime] = useState(25 * 60);
+  const [restTime, setRestTime] = useState(5 * 60);
   const [isWork, setIsWork] = useState(true);
   const [secondsLeft, setSecondsLeft] = useState(workTime);
   const [isTimerStarted, setIsTimerStarted] = useState(false);
